@@ -8,7 +8,7 @@
       <ul class="navbar-nav mr-auto">
         <% if current_user.present? %>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Minhas compras</a>
+            <a class="nav-link" href="/my_purchases">Minhas compras</a>
           </li>
         <% end %>
       </ul>
@@ -18,7 +18,7 @@
             <a class="nav-link" href="#"><%= current_user.email %></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a class="nav-link" href="/cart"><i class="fa fa-shopping-cart"></i></a>
           </li>
           <li class="nav-item">
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>

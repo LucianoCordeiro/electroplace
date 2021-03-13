@@ -11,11 +11,11 @@
             <li class="list-group-item">R$ <%= product.price %></li>
           </ul>
           <div class="card-body text-center">
-            <button type="submit" class="btn btn-success">Adicionar ao carrinho</button>
+            <%= link_to "Adicionar ao carrinho", add_item_to_cart_path(product_id: product.id), method: :post, class: "btn btn-success" %>
           </div>
         </div>
       </div>
 
     <% end %>
   </div>
-  </div>
+</div>
